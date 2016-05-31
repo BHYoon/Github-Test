@@ -48,7 +48,7 @@ public class HomeController {
 	
 	@RequestMapping("/member/success")
 	public String suc(@ModelAttribute MemberDTO mdto){
-		
+		System.out.println("fix1");
 		System.out.println("id : " + mdto.getId());
 		System.out.println("pw : "+mdto.getPw());
 		System.out.println("age : "+mdto.getAge());
