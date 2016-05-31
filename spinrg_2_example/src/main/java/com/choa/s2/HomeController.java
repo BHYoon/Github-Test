@@ -48,11 +48,7 @@ public class HomeController {
 	
 	@RequestMapping("/member/success")
 	public String suc(@ModelAttribute MemberDTO mdto){
-		/*MemberDTO mdto = new MemberDTO();
-		mdto.setId(request.getParameter("id"));
-		mdto.setPw(request.getParameter("pw"));
-		mdto.setAge(Integer.parseInt(request.getParameter("age")));
-		System.out.println(id);*/
+		
 		System.out.println("id : " + mdto.getId());
 		System.out.println("pw : "+mdto.getPw());
 		System.out.println("age : "+mdto.getAge());
